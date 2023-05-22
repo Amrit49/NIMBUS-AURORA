@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles1.css" />
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" ></script>
+    <title>AGENT-DASHBOARD</title>
+  </head>
+  <body>
+	<section id="menu">
+		<div class="logo">
+			<img src="IMAGES/1.png" alt="">
+			<h2>NIMBUS AURORA</h2>
+		</div>
+		<div class="items">
+			<li>
+				<span class="list"><ion-icon name="list-outline"></ion-icon></span>
+				<a href="agent.html">DASHBOARD</a>
+			</li>
+			<li>
+				<span class="list"><ion-icon name="home"></ion-icon></span>
+				<a href="properties.html">PROPERTIES</a>
+			</li>
+			<li>
+				<span class="list"><ion-icon name="person"></ion-icon></span>
+				<a href="customers.html">CUSTOMERS</a>
+			</li>
+			<li>
+				<span class="list"><ion-icon name="wallet"></ion-icon></span>
+				<a href="account.html">ACCOUNT</a>
+			</li>
+		</div>
+	</section>
+
+	<section id="interface">
+		<div class="navigation">
+			<div class="n1">
+				<div id="menu-bar">
+					<!-- <span class="list"><ion-icon name="menu-outline"></ion-icon></span> -->
+					<ion-icon name="menu-outline"></ion-icon>
+				</div>
+				<div class="search">
+					<span class="list"><ion-icon name="search"></ion-icon></span>
+					<input type="search" placeholder="search">
+				</div>
+			</div>
+			<div class="profile">
+				<span class="list"><ion-icon name="person"></ion-icon></span>
+				<!-- <img src="IMAGES/home.jpeg" alt=""> -->
+				<a href="profile.html">Profile</a>
+				<a href="index.html">LOGOUT</a>
+			</div>
+		</div>
+
+		
+	</section>
+	<script>
+		$('#menu-bar').click(function()
+		{
+			$('#menu').toggleClass("active");
+		})
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
